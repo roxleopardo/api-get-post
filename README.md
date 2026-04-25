@@ -14,13 +14,13 @@ A simple Python API that accepts **GET** and **POST** requests with a JSON body 
 
 ```bash
 # 1. Create and activate the virtual environment
-python3 -m venv .venv
+python -m venv .venv
 # source .venv/bin/activate      # macOS / Linux
 # .venv\Scripts\activate         # Windows
 
 # 2. Install dependencies
-./.venv/bin/pip install --upgrade pip
-./.venv/bin/pip install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 ---
@@ -28,7 +28,7 @@ python3 -m venv .venv
 ## Running the API
 
 ```bash
-./.venv/bin/python app.py
+python app.py
 ```
 
 The server starts at `http://127.0.0.1:5000` by default.
@@ -96,7 +96,7 @@ curl -X GET http://127.0.0.1:5000/echo \
 
 ```bash
 # With the venv activated:
-./.venv/bin/pytest -v
+pytest -v
 ```
 
 Expected output:
